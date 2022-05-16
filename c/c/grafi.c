@@ -17,7 +17,6 @@ struct nodo{
 
 typedef struct nodo NODO;
 
-
 /*
  AllocaMat riceve in ingresso un intero che rappresenta
  l'ordine della matrice (quadrata) da creare. La funzione restituisce
