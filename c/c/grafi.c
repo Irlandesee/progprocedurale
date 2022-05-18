@@ -26,7 +26,7 @@ typedef struct nodo NODO;
 
 int **AllocaMat(int ord){
     int i;
-    int * * mat;
+    int **mat;
     /* alloca un vettore di puntatori */
     mat = (int **)malloc(ord*sizeof(int*));
     for(i=0;i<ord;i++)    /* alloca la riga i-esima */
@@ -76,7 +76,7 @@ void MatRandSparsa(int **mat,int n,int c){
     nlati=c*n;
     for(i=0;i<n;i++)
         for(j=i;j<n;j++)
-            mat[i][j]=mat[j][i]=0;
+            mat[i][j] = mat[j][i]=0;
     srand(time(NULL)%1000000);
     while(nlati>0){
         i=rand()%n;

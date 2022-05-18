@@ -40,6 +40,49 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = /Users/mattiamac/Documents/GitHub/progprocedurale/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target progprocedurale
+
+
+#############################################
+# Order-only phony target for progprocedurale
+
+build cmake_object_order_depends_target_progprocedurale: phony || CMakeFiles/progprocedurale.dir
+
+build CMakeFiles/progprocedurale.dir/cpp/main.cpp.o: CXX_COMPILER__progprocedurale_Debug /Users/mattiamac/Documents/GitHub/progprocedurale/cpp/main.cpp || cmake_object_order_depends_target_progprocedurale
+  DEP_FILE = CMakeFiles/progprocedurale.dir/cpp/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/progprocedurale.dir
+  OBJECT_FILE_DIR = CMakeFiles/progprocedurale.dir/cpp
+
+build CMakeFiles/progprocedurale.dir/cpp/Node/Node.cpp.o: CXX_COMPILER__progprocedurale_Debug /Users/mattiamac/Documents/GitHub/progprocedurale/cpp/Node/Node.cpp || cmake_object_order_depends_target_progprocedurale
+  DEP_FILE = CMakeFiles/progprocedurale.dir/cpp/Node/Node.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/progprocedurale.dir
+  OBJECT_FILE_DIR = CMakeFiles/progprocedurale.dir/cpp/Node
+
+build CMakeFiles/progprocedurale.dir/cpp/matrice_adiacenza/MatAdiacenza.cpp.o: CXX_COMPILER__progprocedurale_Debug /Users/mattiamac/Documents/GitHub/progprocedurale/cpp/matrice_adiacenza/MatAdiacenza.cpp || cmake_object_order_depends_target_progprocedurale
+  DEP_FILE = CMakeFiles/progprocedurale.dir/cpp/matrice_adiacenza/MatAdiacenza.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/progprocedurale.dir
+  OBJECT_FILE_DIR = CMakeFiles/progprocedurale.dir/cpp/matrice_adiacenza
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target progprocedurale
+
+
+#############################################
+# Link the executable progprocedurale
+
+build progprocedurale: CXX_EXECUTABLE_LINKER__progprocedurale_Debug CMakeFiles/progprocedurale.dir/cpp/main.cpp.o CMakeFiles/progprocedurale.dir/cpp/Node/Node.cpp.o CMakeFiles/progprocedurale.dir/cpp/matrice_adiacenza/MatAdiacenza.cpp.o
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk
+  OBJECT_DIR = CMakeFiles/progprocedurale.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = progprocedurale
+  TARGET_PDB = progprocedurale.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -74,7 +117,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/mattiamac/Documents/GitHub/progprocedurale/cmake-build-debug
 
-build all: phony
+build all: phony progprocedurale
 
 # =============================================================================
 # Built-in targets

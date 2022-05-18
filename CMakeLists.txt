@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.21)
 project(progprocedurale)
 
-#set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_C_STANDARD 17)
+set(CMAKE_CXX_STANDARD 17)
+#set(CMAKE_C_STANDARD 17)
 
 #add_executable(progprocedurale cpp/aoc/day1.cpp cpp/aoc/utils/Reader.cpp cpp/aoc/utils/Reader.h)
 #add_executable(progprocedurale cpp/aoc/day17.cpp cpp/aoc/utils/Reader.cpp cpp/aoc/utils/Reader.h cpp/aoc/conway_cubes/conwayCube.cpp cpp/aoc/conway_cubes/conwayCube.h cpp/aoc/utils/Coordinate.cpp cpp/aoc/utils/Coordinate.h cpp/aoc/utils/Tester.cpp cpp/aoc/utils/Tester.h)
@@ -14,3 +14,7 @@ set(CMAKE_C_STANDARD 17)
 #add_executable(progprocedurale cpp/gest/List/List.h cpp/gest/Iterator/Iterator.h cpp/gest/main.cpp )
 #add_executable(progprocedurale c/eserciziManuela/pacchetto15/es3.c)
 #add_executable(progprocedurale  cpp/main.cpp  cpp/gest/impiegato/Impiegato.h cpp/gest/impiegato/Impiegato.cpp cpp/gest/impiegato/InvalidImpiegato.h cpp/gest/impiegato/manager/Manager.cpp cpp/gest/impiegato/manager/Manager.h)
+#add_executable(progprocedurale c/eserciziManuela/pacchetto15/es1.c)
+#add_executable(progprocedurale cpp/simple_vec/Simple_Vec.h cpp/simple_vec/Simple_Vec.cpp cpp/main.cpp cpp/LinkedList/double_linked_list/DoubleLinkedList.cpp cpp/LinkedList/double_linked_list/DoubleLinkedList.h)
+#add_executable(progprocedurale c/sorgentiC/grafi.c)
+add_executable(progprocedurale cpp/main.cpp cpp/Node/Node.h cpp/Node/Node.cpp cpp/matrice_adiacenza/MatAdiacenza.cpp cpp/matrice_adiacenza/MatAdiacenza.h cpp/matrice_adiacenza/index_out_of_bounds.h)

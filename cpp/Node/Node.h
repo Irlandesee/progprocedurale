@@ -10,6 +10,8 @@ class Node{
 public:
     explicit Node(int);
     Node(int, Node *);
+    Node(const Node&);
+    Node& operator=(const Node&);
     ~Node();
     Node *get_next();
     [[nodiscard]] int get_valore() const;

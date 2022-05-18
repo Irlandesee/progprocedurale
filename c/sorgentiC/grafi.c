@@ -105,27 +105,27 @@ void MatMan(int **mat,int n)
  adiacenza di ciascun nodo (uso di nodi fittizi in testa)
  */
 
-NODO ** CreaGrafo(int ** MatAdiac, int dim)
-{int i,j;
-    NODO *pt;
-    NODO ** grafo;
-    grafo =(NODO**)malloc(dim*sizeof(NODO*));
-    for (i=0;i<dim;i++)
-    {grafo[i]=(NODO *)malloc(sizeof(NODO)); //nodi fittizi
-        grafo[i]->nome=0;
-        grafo[i]->next=NULL;
-    }
-    for (i=0;i<dim;i++)
-    {pt=grafo[i];
-        for (j=0;j<dim;j++)
-            if (MatAdiac[i][j] != 0)
-            {pt->next=(NODO *)malloc(sizeof(NODO));
-                pt->next->nome=j+1;
-                pt->next->next=NULL;
-                pt = pt->next;
-            }
-    }
-    return grafo;
+NODO ** CreaGrafo(int ** MatAdiac, int dim){
+	int i,j;
+	NODO *pt;
+	NODO ** grafo;
+	grafo =(NODO**)malloc(dim*sizeof(NODO*));
+	for(i=0; i < dim; i++){ //dim = numero di righe?
+		grafo[i]=(NODO *)malloc(sizeof(NODO)); //nodi fittizi
+		grafo[i]->nome=0;
+		grafo[i]->next=NULL;
+	}	
+    	for(i=0;i<dim;i++){
+	    pt=grafo[i];
+	    for(j=0;j<dim;j++)
+		if (MatAdiac[i][j] != 0){
+			pt->next=(NODO *)malloc(sizeof(NODO));
+			pt->next->nome=j+1;
+			pt->next->next=NULL;
+			pt = pt->next;
+		}
+	}
+	return grafo;
 }
 
 

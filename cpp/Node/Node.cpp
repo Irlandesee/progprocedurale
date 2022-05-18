@@ -3,6 +3,7 @@
 //
 
 #include "Node.h"
+#include <iostream>
 #include <sstream>
 #include <ostream>
 #include <memory>
@@ -17,7 +18,21 @@ Node::Node(int valore, Node *next){
     this->next = next;
 }
 
-Node::~Node() = default;
+//copy constructor
+Node::Node(const Node& other_node) : valore{other_node.valore}, next{other_node.next}{
+    std::cout << "Copy constructor called\n" << std::endl;
+}
+//copy assignment
+Node& Node::operator=(const Node& other_node){
+    this->valore = other_node.valore;
+    delete next;
+    this->next = other_node.next;
+    return *this;
+}
+
+Node::~Node(){
+    //delete next;
+}
 
 Node *Node::get_next() {return this->next;}
 int Node::get_valore() const {return this->valore;}
