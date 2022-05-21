@@ -49,23 +49,11 @@ cmake_ninja_workdir = /Users/mattiamac/Documents/GitHub/progprocedurale/cmake-bu
 
 build cmake_object_order_depends_target_progprocedurale: phony || CMakeFiles/progprocedurale.dir
 
-build CMakeFiles/progprocedurale.dir/cpp/main.cpp.o: CXX_COMPILER__progprocedurale_Debug /Users/mattiamac/Documents/GitHub/progprocedurale/cpp/main.cpp || cmake_object_order_depends_target_progprocedurale
-  DEP_FILE = CMakeFiles/progprocedurale.dir/cpp/main.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
+build CMakeFiles/progprocedurale.dir/c/eserciziManuela/pacchetto15/es4.c.o: C_COMPILER__progprocedurale_Debug /Users/mattiamac/Documents/GitHub/progprocedurale/c/eserciziManuela/pacchetto15/es4.c || cmake_object_order_depends_target_progprocedurale
+  DEP_FILE = CMakeFiles/progprocedurale.dir/c/eserciziManuela/pacchetto15/es4.c.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk
   OBJECT_DIR = CMakeFiles/progprocedurale.dir
-  OBJECT_FILE_DIR = CMakeFiles/progprocedurale.dir/cpp
-
-build CMakeFiles/progprocedurale.dir/cpp/Node/Node.cpp.o: CXX_COMPILER__progprocedurale_Debug /Users/mattiamac/Documents/GitHub/progprocedurale/cpp/Node/Node.cpp || cmake_object_order_depends_target_progprocedurale
-  DEP_FILE = CMakeFiles/progprocedurale.dir/cpp/Node/Node.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/progprocedurale.dir
-  OBJECT_FILE_DIR = CMakeFiles/progprocedurale.dir/cpp/Node
-
-build CMakeFiles/progprocedurale.dir/cpp/matrice_adiacenza/MatAdiacenza.cpp.o: CXX_COMPILER__progprocedurale_Debug /Users/mattiamac/Documents/GitHub/progprocedurale/cpp/matrice_adiacenza/MatAdiacenza.cpp || cmake_object_order_depends_target_progprocedurale
-  DEP_FILE = CMakeFiles/progprocedurale.dir/cpp/matrice_adiacenza/MatAdiacenza.cpp.o.d
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17
-  OBJECT_DIR = CMakeFiles/progprocedurale.dir
-  OBJECT_FILE_DIR = CMakeFiles/progprocedurale.dir/cpp/matrice_adiacenza
+  OBJECT_FILE_DIR = CMakeFiles/progprocedurale.dir/c/eserciziManuela/pacchetto15
 
 
 # =============================================================================
@@ -75,7 +63,7 @@ build CMakeFiles/progprocedurale.dir/cpp/matrice_adiacenza/MatAdiacenza.cpp.o: C
 #############################################
 # Link the executable progprocedurale
 
-build progprocedurale: CXX_EXECUTABLE_LINKER__progprocedurale_Debug CMakeFiles/progprocedurale.dir/cpp/main.cpp.o CMakeFiles/progprocedurale.dir/cpp/Node/Node.cpp.o CMakeFiles/progprocedurale.dir/cpp/matrice_adiacenza/MatAdiacenza.cpp.o
+build progprocedurale: C_EXECUTABLE_LINKER__progprocedurale_Debug CMakeFiles/progprocedurale.dir/c/eserciziManuela/pacchetto15/es4.c.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk
   OBJECT_DIR = CMakeFiles/progprocedurale.dir
   POST_BUILD = :

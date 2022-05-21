@@ -42,6 +42,14 @@ int miamal(int *ptr){
 4. Cosa si intende per conflitto in una gerarchia di classi? Esiste una tecnica automatica per la risoluzione dei conflitti? Come si comporta C++ al riguardo?
 
 5. Quali sono le parole chiave utilizzate per il controllo della visibilita degli elementi di una classe? Costruite una tabella che presenti tutte le combinazioni (e il loro significato) in abbinamento con le diverse modalita di derivazione.
+Si hanno 3 parole chiave per il controllo della visibilità:
+
+private -> se un membro è private allora il è visibile solamente all'interno della classe. Se A è una classe privata base, B una classe derivata da A. I membri pubblici e protected di A possono essere usati dalle funzioni membro di B. Solo gli amici e membri di D possono convertire un B* a A*
+
+public -> se un membro è public allora è visibile ovunque, anche all'esterno della classe. Se A è classe pubblica allora i suoi membri e funzioni public possono essere usate ovunque. Inoltre i suoi membri protetti possono essere usati da membri e amici di B e membri e amici delle classi derivate da B. Qualsiasi funzione può convertire un B* a A*
+
+protected -> se A è un classe protected, i suoi memrbi public e protected opssono essere usati solo da funzioni e membri derivati di B. Solo amici e mebtri di B e amici delle classi derivate da B possono convertire da B* a A*
+
 
 6. Assumete che un int occupi 4 byte e un puntatore 8. Considerate il seguente programma e mostrate la sequenza di messaggi stampati in esecuzione. Motivate i valori stampati.
 ```c++
@@ -58,4 +66,11 @@ int main(int argc, const char * argv[]) {
     std::cout<<"Dimensione oggetto C :"<<sizeof(objC)<<’\n’;
     std::cout<<"Dimensione oggetto D :"<<sizeof(objD)<<’\n’;
     return 0;}
+```
+```c++
+A objA; // 4 byte -  ha un solo int, f non è virtuale
+B objB; // 24 byte - 4 byte occupati da A::el, 4 da B::el,
+		//4 da B::m, 4 da B::objA, 8 per il puntatore associato alla funzione virtuale f
+C objC; // 12 byte - 4 da C::el, 4 da C::objA, 4 da A::el
+D objD; //48 byte 
 ```

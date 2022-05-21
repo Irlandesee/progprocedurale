@@ -17,7 +17,10 @@ char carattere(char *, int);
 int lunghezza_stringa(char *);
 int main(int argc, char *argv[]){
     Nodo *head = (struct nodo **) malloc(sizeof(struct nodo));
-    (*head) = (struct nodo *) malloc(sizeof(struct nodo));
+    *head = (struct nodo *) malloc(sizeof(struct nodo));
+
+    struct nodo *head_copy = *head;
+
     char *s = argv[1];
     size_t s_length = lunghezza_stringa(s);
     printf("lunghezza stringa: %zu\n", s_length);
@@ -31,8 +34,10 @@ int main(int argc, char *argv[]){
         (*head) = (*head)->next;
     }
 
-    while((*head)->next != NULL)
-        printf("%c\n", (*head)->c);
+    while(head_copy != NULL){
+        printf("%c\n", head_copy->c);
+        head_copy = head_copy->next;
+    }
 
 
     return 0;
