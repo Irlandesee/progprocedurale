@@ -13,6 +13,8 @@ public:
     index_out_of_bounds(int i, int j){
         printf("Index : [%d,%d]\n", i, j);
     }
+    //needs one less parameter
+    friend std::ostream& operator<<(std::ostream& , int, int);
 };
 
 

@@ -5,7 +5,7 @@
 #ifndef PROGPROCEDURALE_VEC_H
 #define PROGPROCEDURALE_VEC_H
 #define DEFAULT_SIZE 10
-#define FREE -1
+#define FREE (-1)
 
 class vec {
 public:

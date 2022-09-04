@@ -1,4 +1,4 @@
-"/Users/mattiamac/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/mattiamac/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/mattiamac/Documents/GitHub/progprocedurale -B /Users/mattiamac/Documents/GitHub/progprocedurale/cmake-build-debug
+"/Users/mattiamac/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.3739.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/mattiamac/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.3739.54/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/mattiamac/Documents/GitHub/progprocedurale -B /Users/mattiamac/Documents/GitHub/progprocedurale/cmake-build-debug
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/mattiamac/Documents/GitHub/progprocedurale/cmake-build-debug

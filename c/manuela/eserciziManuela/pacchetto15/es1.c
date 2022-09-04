@@ -39,7 +39,6 @@ int main(int argc, char *argv[]){
         head_copy = head_copy->next;
     }
 
-
     return 0;
 }
 
